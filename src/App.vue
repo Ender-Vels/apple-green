@@ -1,5 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+//import AutorizeBlock from './components/AutorizeSites.vue'
+
 
 </script>
 
@@ -24,9 +26,16 @@ import { RouterLink, RouterView } from 'vue-router'
           <RouterLink to="/"><img src="./assets/ico/viber.png" alt=""></RouterLink>
 
         </div>
-        <div class="header_func">
-          
+        <div class="headers_func">
+          <div class="headers_func_account">
+              <RouterLink to="/"><img src="./assets/ico/autorize.png" alt=""></RouterLink>
         </div>
+          <div class="headers_func_basket">
+            <RouterLink to="/"><img src="./assets/ico/basket.png" alt=""></RouterLink>
+
+          </div>
+        
+      </div>
       </div>
   </header>
 
@@ -42,6 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
   background-color: #051726;
   display: flex;
   width: 100%;
+  justify-content: space-around;
  
 }
 
@@ -64,16 +74,29 @@ import { RouterLink, RouterView } from 'vue-router'
   color: white;
   font-size: 25px;
 }
-.headers_social{
-  margin-left: 30px;
-}
+
 .headers_social img {
   position: relative;
   height: 30px;
   top:70px;
   margin-left: 15px;
-}
 
+}
+.headers_func{
+    display: flex;
+}
+.headers_func_account{
+  display: block;
+}
+.headers_func_account img{
+  position: relative;
+  top:60px;
+}
+.headers_func_basket{
+  margin-left: 10px;
+  position: relative;
+  top:60px;
+}
 
 
 </style>
