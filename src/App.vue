@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 //import AutorizeBlock from './components/AutorizeSites.vue'
 
 
+
 </script>
 
 <template>
@@ -37,6 +38,7 @@ import { RouterLink, RouterView } from 'vue-router'
         
       </div>
       </div>
+      
   </header>
 
   <RouterView />
@@ -93,7 +95,7 @@ import { RouterLink, RouterView } from 'vue-router'
   top:60px;
 }
 .headers_func_basket{
-  margin-left: 10px;
+  margin-left: 40px;
   position: relative;
   top:60px;
 }

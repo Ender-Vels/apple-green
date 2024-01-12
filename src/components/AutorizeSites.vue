@@ -8,6 +8,7 @@
            <div class="autorize_password">
                 <span>Введіть пароль</span>
                 <input type="password">
+                
            </div>
         </form>
     </div>
