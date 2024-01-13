@@ -7,12 +7,9 @@
             
             }    
         },     
-        methods:{
-            disableForm:function(){
-                
-            }
+
         }     
-}
+
 </script>
 
 
