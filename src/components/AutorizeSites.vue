@@ -1,33 +1,27 @@
-
-
 <script>
     export default{
-        props:{
-            isClick:Boolean
-        },
+       
         data(){
             return{
+               
+            
+            }    
+        },     
+        methods:{
+            disableForm:function(){
                 
-            
             }
-            
-        },
-        
-        
-        
-        
+        }     
 }
 </script>
 
 
 
 <template>
-    <div class="ModalBoard" v-if="isClick">
+    <div class="ModalBoard">
         <div class="ModalBoard_contentBox">
         <form action="">
-            <div>
-                <button @click="ThisCkickAutorizeForm()">X</button>
-            </div>
+           
             <div class="ModalBoard_Email">
                 <label for="">
                     <span>Email:</span>
@@ -36,13 +30,13 @@
             </div>
             <div class="ModalBoard_Password">
                 <label for="">
-                    <span>Password:</span>
+                    <span>Пароль:</span>
                     <input type="password">
                 </label>
             </div>
             <div class="ModalBoard_contentBox_btn">
                 <button>Увійти</button>
-                <RouterLink to="/">Ще не зареєстровані?</RouterLink>
+                <RouterLink to="/Register"><span @click="isClick">Ще не зареєстровані?</span></RouterLink>
             </div>
             <div>
                 
@@ -61,9 +55,9 @@
 <style>
 
     .ModalBoard{
-        position: fixed;
+        position: absolute;
         width:100%;
-        height: 90%;
+        height: 100%;
         z-index: 99998;
         background-color: rgba(146, 136, 136, .3);
         display: grid;
@@ -74,11 +68,11 @@
        
     }
     .ModalBoard_contentBox{
-        max-width: 600px;
-        height: 380px;
+        max-width: 1200px;
+        width: 650px;
         padding: 55px;
         z-index: 1;
-        background-color: rgb(197, 206, 206);
+        background-color: rgb(211, 223, 223);
         -webkit-box-shadow: 15px -11px 44px -14px rgba(67,185,240,1);
         -moz-box-shadow: 15px -11px 44px -14px rgba(67,185,240,1);
         box-shadow: 15px -11px 44px -14px rgba(67,185,240,1);
@@ -99,7 +93,7 @@
     }
     .ModalBoard_Email span{
         display: block;
-        font-size: 30px;
+        font-size: 25px;
     
 
     }
@@ -109,19 +103,19 @@
         justify-content: center;
         text-align: center;
         margin-top: 10px;
-        padding-top: 50px;
+        padding-top: 30px;
  
      }
      .ModalBoard_Password span{
         display: block;
-        font-size: 30px;
+        font-size: 25px;
        
  
      }
      .ModalBoard_contentBox_btn{
         align-items: center;
         text-align: center;
-        margin-top: 20px;    
+        margin-top: 25px;    
      }
      .ModalBoard_contentBox_btn button{
         font-size: 25px;
@@ -137,13 +131,14 @@
      }
      .ModalBoard_Email input{
         border: none;
-        font-size: 30px;
+        font-size: 25px;
         border-radius: 10px 0px 10px 0px;
      }
      .ModalBoard_Password input{
         border: none;
-        font-size: 30px;
+        font-size: 25px;
         border-radius: 10px 0px 10px 0px;
+        border-color: aqua;
      }
      .ModalBoard_contentBox_btn a{
         display: block;

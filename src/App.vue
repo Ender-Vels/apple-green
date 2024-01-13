@@ -1,20 +1,14 @@
 <script >
-import AutorizeSites from './components/AutorizeSites.vue'
+
 export default{
   components:{
-  AutorizeSites,
+
   },
   data(){
     return{
-      isfineClick:false
+     
     }
   },
-  methods:
-  {
-    openFormAutorize:function(){
-      this.isfineClick=!this.isfineClick
-    }
-  }
  
   
 }
@@ -48,7 +42,7 @@ export default{
         </div>
         <div class="headers_func">
           <div class="headers_func_account">
-              <button @click="openFormAutorize()"></button>
+              <RouterLink to="/Autorize"><button ></button></RouterLink>
         </div>
           <div class="headers_func_basket">
             <button></button>
@@ -59,9 +53,6 @@ export default{
       </div>
       
   </header>
-
-  <AutorizeSites :isClick="isfineClick"/>
-  
   <RouterView />
   
 </template>
