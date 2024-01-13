@@ -7,7 +7,7 @@
         },
         data(){
             return{
-                formClick: this.isClick
+                
             
             }
             
@@ -22,7 +22,7 @@
 
 
 <template>
-    <div class="ModalBoard" v-if="formClick">
+    <div class="ModalBoard" v-if="isClick">
         <div class="ModalBoard_contentBox">
         <form action="">
             <div>
