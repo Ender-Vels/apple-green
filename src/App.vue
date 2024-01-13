@@ -1,6 +1,24 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-//import AutorizeBlock from './components/AutorizeSites.vue'
+<script >
+import AutorizeSites from './components/AutorizeSites.vue'
+export default{
+  components:{
+  AutorizeSites,
+  },
+  data(){
+    return{
+      isfineClick:false
+    }
+  },
+  methods:
+  {
+    openFormAutorize:function(){
+      this.isfineClick=!this.isfineClick
+    }
+  }
+ 
+  
+}
+
 
 
 
@@ -8,6 +26,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
+    
     <div class="headers">
       <div class="headers_logo">
         <RouterLink to="/"><img src="./assets/logo/logo-color.svg"></RouterLink>
@@ -29,10 +48,10 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
         <div class="headers_func">
           <div class="headers_func_account">
-              <RouterLink to="/"><img src="./assets/ico/autorize.png" alt=""></RouterLink>
+              <button @click="openFormAutorize()"></button>
         </div>
           <div class="headers_func_basket">
-            <RouterLink to="/"><img src="./assets/ico/basket.png" alt=""></RouterLink>
+            <button></button>
 
           </div>
         
@@ -41,14 +60,19 @@ import { RouterLink, RouterView } from 'vue-router'
       
   </header>
 
+  <AutorizeSites :isClick="isfineClick"/>
+  
   <RouterView />
+  
 </template>
 
 <style>
 *{
   margin: 0px;
   padding: 0px;
+
 }
+
 .headers{
   background-color: #051726;
   display: flex;
@@ -94,10 +118,26 @@ import { RouterLink, RouterView } from 'vue-router'
   position: relative;
   top:60px;
 }
-.headers_func_basket{
-  margin-left: 40px;
+.headers_func_account button{
   position: relative;
   top:60px;
+  background: none;
+  border: none;
+  background-image: url('./assets/ico/autorize.png');
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.headers_func_basket{
+  position: relative;
+  top:60px;
+  background: none;
+  border: none;
+  background-image: url('./assets/ico/basket.png');
+  cursor: pointer;
+  width: 50px;
+  height: 50px;;
+  margin-left: 20px;
 }
 
 
