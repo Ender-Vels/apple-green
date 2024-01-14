@@ -1,4 +1,8 @@
 <template>
+      <div class="mainPage_presents_day">
+            <h1>Пропозиція тижня:</h1>
+       </div>
+       
     <div class="productCard">
         <div class="productCard_box">
             <div class="productCard_box_product">
