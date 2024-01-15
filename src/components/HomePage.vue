@@ -26,7 +26,22 @@
             </div>
         </div>
        </div>
+       <div class="mainPage_presents_day">
+            <h1>Пропозиція тижня:</h1>
+       </div>
         <ProductCardList/>
+    </div>
+    <div class="chooseReg">
+        <div class="chooseReg_title">
+            <span>Реєструйся на сайті та отримуй шалені знижки!</span>
+            
+            <div class="chooseReg_title_link">
+                <RouterLink to="/Register">Зареєструватись</RouterLink>
+            </div>
+        </div>
+        <div class="chooseReg_img">
+            <img src="../assets/logo/chooseReg.png" alt="" >
+        </div>
     </div>
 
     <RouterView/>
@@ -103,6 +118,29 @@ ProductCardList
     z-index: 1;
 
 }
-
+.chooseReg{
+    display: flex;
+    max-width:  1900px;
+    margin: 0 auto;
+    background-color: #051726;
+    justify-content: space-around;
+    padding-top: 40px;
+    border-radius: 30px;
+    border: none;
+    
+}
+.chooseReg_title{
+    display: grid;
+    text-align: center;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(173, 165, 165);
+}
+.chooseReg_title_link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
 </style>

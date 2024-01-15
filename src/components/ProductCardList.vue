@@ -38,20 +38,7 @@ export default{
                     photoURL:"../assets/product/14PM.png",
                     price: '25 990',
                 },
-                {
-                    title:'Apple iPhone 14 Pro 128 ГБ Б/У (Deep Purple) Ідеальний стан',
-                    photoURL:"../assets/product/14PM.png",
-                    price: '25 990',
-                },
-                {
-                    title:'Apple iPhone 14 Pro 128 ГБ Б/У (Deep Purple) Ідеальний стан',
-                    photoURL:"../assets/product/14PM.png",
-                    price: '25 990',
-                },{
-                    title:'Apple iPhone 14 Pro 128 ГБ Б/У (Deep Purple) Ідеальний стан',
-                    photoURL:"../assets/product/14PM.png",
-                    price: '25 990',
-                },
+                
             ]
         }
     }
