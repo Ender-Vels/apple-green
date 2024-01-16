@@ -1,15 +1,22 @@
 <script >
 
-export default{
-  components:{
 
-  },
+import Popuos from './components/PopupWindow.vue'
+export default{
+
+  components:{
+    Popuos,
+},
   data(){
     return{
-     
+     showModal:false
     }
   },
- 
+  methods:{
+    showModalMenu:function(){
+      this.showModal=!this.showModal
+    }
+  }
   
 }
 
@@ -29,12 +36,14 @@ export default{
         <span>Зв'яжіться з нами</span>
         <div class="headers_contacts_number">
           <span>000-0000-00-00</span>
-        
-        
-        </div>
-      
-      
+ 
       </div>
+
+    </div>
+    <div class="catalogBTN">
+      <button @click="showModalMenu()"> Каталог</button>
+    </div>
+
         <div class="headers_social">
           <RouterLink to="/"><img src="./assets/ico/telegram.png" alt=""></RouterLink>
           <RouterLink to="/"><img src="./assets/ico/viber.png" alt=""></RouterLink>
@@ -51,8 +60,13 @@ export default{
         
       </div>
       </div>
+      <body>
+          <Popuos :showModalWindow="showModal"  @close="showModal=false"/>
+      </body>
+      
       
   </header>
+  
   <RouterView />
   
 </template>
@@ -129,6 +143,18 @@ export default{
   width: 50px;
   height: 50px;;
   margin-left: 20px;
+}
+.catalogBTN{
+  position: relative;
+  top: 60px;
+}
+.catalogBTN button{
+  text-align: center;
+  font-size: 30px;
+  color: aliceblue;
+  background-color: #03cc5a;
+  padding: 6px;
+  border-radius: 10px;
 }
 
 

@@ -1,4 +1,5 @@
 <template>
+    <div class="main">
     <div class="mainPage">
        <div class="mainPage_conteiner">
         <div class="mainPage_conteiner_present">
@@ -43,7 +44,24 @@
             <img src="../assets/logo/chooseReg.png" alt="" >
         </div>
     </div>
-
+    <div class="SocialNews">
+        <div class="SocialNews_title">
+            <span>Дізнавайся про наші новинки в у наших Соціальних мережах:</span>
+        </div>
+        <div class="SocialNews_link">
+            <RouterLink to="/"><img src="../assets/ico/telegram.png" alt=""></RouterLink>
+            <RouterLink to="/"><img src="../assets/ico/viber.png" alt=""></RouterLink>
+            <RouterLink to="/"><img src="../assets/ico/insta.png" alt=""></RouterLink>
+        </div>
+    </div>
+    <div class="SocialNews_photo">
+        <img src="../assets/catalog/images1.jpg" height="400px" alt="">
+        <img src="../assets/catalog/images2.png" height="400px" alt="">
+        <img src="../assets/catalog/images3.jpg" height="400px"  alt="">
+        <img src="../assets/catalog/images3.jpg" height="400px"  alt="">
+ 
+    </div>
+</div>
     <RouterView/>
 </template>
 
@@ -115,7 +133,7 @@ ProductCardList
     text-decoration: none;
     margin: 15px;
     color: black;
-    z-index: 1;
+   z-index: 999;
 
 }
 .chooseReg{
@@ -141,6 +159,40 @@ ProductCardList
     display: flex;
     text-align: center;
     justify-content: center;
+    
+}
+.chooseReg_title_link a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 1000;
+}
+.main{
+    display: grid;
+    margin: 0 auto;
+    max-width: 1900px;
+}
+.SocialNews{
+    display: flex;
+    padding: 10px;
+    margin: 30px;
+    justify-content: space-between;
+}
+.SocialNews_title{
+    font-size: 40px;
+    color: #051726;
+    
+}
+.SocialNews_link img{
+    height: 48px;
+    width: 48px;
+    margin-left: 30px;
+}
+.SocialNews_photo{
+    display: flex;
+   
+}
+.SocialNews_photo img{
+    margin: 20px;
 }
 
 </style>
