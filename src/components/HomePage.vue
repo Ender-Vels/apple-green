@@ -5,12 +5,12 @@
         <div class="mainPage_conteiner_present">
             <div class="mainPage_conteiner_present_link">
                 <h1>Наш каталог товару</h1>
-                <RouterLink to="/">Каталог товару</RouterLink>
+                <RouterLink to="/CatalogList">Каталог товару</RouterLink>
             </div>
             <div class="mainPage_conteiner_present_main_product">
                 <div class="mainPage_conteiner_present_main_product_iphone">
                     <div class="mainPage_conteiner_present_main_product_iphone_check">
-                <RouterLink to="/">Надійний Вибір!</RouterLink>
+                <RouterLink to="/CatalogPhone">Надійний Вибір!</RouterLink>
             </div>
             <div class="mainPage_conteiner_present_main_product_iphone_checkTwo">
                 <RouterLink to="/"><img src="../assets/catalog/iphone.jpg" alt=""></RouterLink>

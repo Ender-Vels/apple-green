@@ -6,10 +6,12 @@
             <button @click="$emit('close')"><img src="../assets/functions/cancel.png" alt=""></button>
           </div>
           <div class="modalMenu_phone">
-            <RouterLink to="/">Смартфони</RouterLink>
+            <RouterLink to="/CatalogPhone">Смартфони</RouterLink>
+         
           </div>
           <div class="modalMenu_acs">
               <RouterLink to="/">Аксесуари</RouterLink>
+              
           </div>
         </div>
       </div>
@@ -37,11 +39,15 @@
 </script>
 
 <style>
+.modalMenu_cancel{
+  padding: 10px;
+}
 .modalMenu_cancel button{
   display: block;
 border: none;
 background: none;
 float: right;
+cursor: pointer;
 }
 .modal{
   position: fixed;

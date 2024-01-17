@@ -37,16 +37,18 @@ export default{
 .productCard{
     display: grid;
     
+    
 }
 
 .productCard_box_product{
-    margin: 40px;
+    margin: 30px;
     font-size: 20px;
-    max-width: 450px;
+    max-width: 350px;
     align-items: center;
     text-align: center;
     background-color:#f3f3f3;
     border-radius: 10px;
+    justify-content: space-between;
 }
 .productCard_box_product img{
     height: 300px;

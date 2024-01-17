@@ -146,13 +146,13 @@ export default{
 }
 .catalogBTN{
   position: relative;
-  top: 60px;
+  top: 70px;
 }
 .catalogBTN button{
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: aliceblue;
-  background-color: #03cc5a;
+  background-color: #2dda78;
   padding: 6px;
   border-radius: 10px;
 }
